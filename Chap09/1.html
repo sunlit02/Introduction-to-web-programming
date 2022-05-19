@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>자바스크립트 날짜 요일 출력</title>
+  </head>
+  <body>
+    <script type = "text/javascript">
+      var today = new Date();
+      var y = today.getFullYear();
+      var m = today.getMonth() + 1;
+      var d = today.getDate();
+
+      var week = ['일', '월', '화', '수', '목', '금', '토'];
+
+      var w = week[today.getDay()];
+      document.write("오늘은 " + y + "년 " + m + "월 " + d + "일 "+ w +"요일 입니다<br/>");
+    </script>
+  </body>
+</html>
