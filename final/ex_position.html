@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positions</title>
+        <meta charset="utf-8">
+
+        <style>
+            body { background-size: cover;background-image:linear-gradient(rgba(0, 0, 0, 0.6),  rgba(0, 0, 0, 0.6)), url("https://file.mk.co.kr/meet/neds/2014/11/image_readtop_2014_1439212_14163192611634418.jpg");}
+            .logo {width: 200px; height: 100px;}
+            h1 {text-shadow: 4px 4px 6px #785A28; color:#F0E6D2; font-size: 50pt; font-weight: bold ; margin-left:50pt;}
+            h2 {text-shadow: 2px 4px 6px #785A28; color:#F0E6D2; font-size: 30pt; font-weight: bold ; margin-left:70pt;}
+            h4 {font-size: 15pt; color:#C89B3C; margin-left: 100pt; font-weight: bold;}
+            figcaption { font-family:'Times New Roman', Times, serif; font-size:12pt; font-weight:bold; text-shadow: 2px 2px 6px #785A28; color:#F0E6D2; text-align: center;} 
+            p { font-size: 12pt; color:#A09B8C; margin-left: 100pt; line-height: 20pt;}
+            li { color: #F0E6D2; line-height: 30pt; font-size: 12pt; margin-left: 70pt;}
+            table {width: 100%; height: auto;}
+            .center { display: block; margin:auto;}
+            .margin { margin-left: 70pt;}
+
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function callResult() {
+                    var top = 0, jun = 0, mid = 0, sup = 0, bot = 0;
+                    var idlist = ["jun1", "top1", "bot1", "mid1", "jun2", "sup1", "mid2", "top2", "bot2", "sup2"];
+
+                    for (i = 0; i < 10; i++) {
+                        var p = idlist[i];
+                        var temp = document.getElementById(p).value;
+                        if (p == "jun1" || p == "jun2")
+                            jun += parseInt(temp);
+                        else if (p == "top1" || p == "top2")
+                            top += parseInt(temp);
+                        else if (p == "mid1" || p == "mid2")
+                            mid += parseInt(temp);
+                        else if (p == "sup1" || p == "sup2")
+                            sup += parseInt(temp);
+                        else
+                            bot += parseInt(temp);
+                    }
+
+                    var total = [top, jun, mid, sup, bot];
+                    total.sort();
+                    total.reverse();
+                    var tempre;
+
+                    if (total[0] == top)
+                        tempre = "TOP";
+                    else if (total[0] == jun)
+                        tempre = "JUNGLE";
+                    else if (total[0] == mid)
+                        tempre = "MID";
+                    else if (total[0] == sup)
+                        tempre = "SUPPORT";
+                    else
+                        tempre = "BOTTOM";
+
+                    document.getElementById("re").value = tempre;
+                }
+        </script>
+
+        <header>
+            <a href="http://mm.sookmyung.ac.kr/~itx2116283/ex/php/opening.html"><img class="logo" src = "https://w.namu.la/s/597fd331cfc9bb77651d54e7df4d9f6dc8b65a262863ad2c1b4631fe8a3ba7d6933d6ea2981f1a42c080780bc5ab868209afdd3604178f97e0b4bde1f1808e6e4c94e2a6baece774d565bd54fd9655248cc7616740b6d638dc60a2160c491f77"></a>
+            <h1>Positions</h1>
+            <h4></h4>
+        </header>
+        
+        <article>
+            <section>
+                <table>
+                    <tr>
+                      <td>
+                        <figure>
+                            <a href="#top"><img class="center" src="https://w.namu.la/s/063f1a7744d6a9a9da086fba000984c32b945dc0b36448f31219028621d553841cd08d436d31a98a4c18757b02fa5b129e06577e75172ddbe21ac3daa189ddf0c8cc7c6eed255acfa80590c4deffc5420aed1d90e11bcba282e535e0ad3f58b9" width="200" height="200"></a>
+                            <br>
+                            <figcaption>TOP</figcaption>
+                        </figure>
+                      </td>
+        
+                      <td>
+                        <figure>
+                            <a href="#jungle"><img class="center" src="https://w.namu.la/s/4403930b2bc3825d3c77382c57bb696424f975af9880213fe98853bcca61bae2874a37e4642de9c246f87eb81bbe067e60bf4a2d71a3cd766568ed659874403d4d0ad1d25d2afe6850c66432ce6e1393f3b775cb2280ac6e1c0d92dca05d9f9e" width="200" height="200"></a>
+                            <br>
+                            <figcaption>JUNGLE</figcaption>
+                        </figure>
+                      </td>
+        
+                      <td>
+                        <figure>
+                            <a href="mid"><img class="center" src="https://w.namu.la/s/82c44c98703e4b34e65e850c56b312db7b178fbb960585376a045cb4f3f110d14aee9738f8e5ee350ca6a7130f49235f7ec3f01c76e7966bb8119a78dc9dd0cd05ba727a6d5b00cf456b93066a63246fe5ce7bfbbbf893bb1a7b0d275b6ebce1" width="200" height="200"></a>
+                            <br>
+                            <figcaption>MID</figcaption>
+                        </figure>
+                      </td>
+        
+                      <td>
+                        <figure>
+                            <a href="#support"><img class="center" src="https://w.namu.la/s/b151ed5a28ee76f5155075d591fd6fda9d3a20f33ce96b493054af61e4655310cf18353afb0b85755501cc130c0b38a3844baaad9fff71ec3e20ff542e5a06412c2c7a462290c777633a13107f1fd6d29c085f45f96439a802aaf7f0c376ce8f" width="200" height="200"></a>
+                            <br>
+                            <figcaption>SUPPORT</figcaption>
+                        </figure>
+                      </td>
+
+                      <td>
+                        <figure>
+                            <a href="bottom"><img class="center" src="https://w.namu.la/s/7f916b343072a3f9ea7eb9ddefc3f6e3017afe24da3d0c1d039c87ce3906deb627973515e12626a9dd618d7fabee42ee9afbf3427fff1fd51a430aeb80a0a1b528605614227e97cc164eab99f6821f9c73d2f003ec9a9d91acd5b14c53df6e38" width="200" height="200"></a>
+                            <br>
+                            <figcaption>BOTTOM</figcaption>
+                        </figure>
+                      </td>
+                    <tr>
+                </table>
+            </section>
+
+            <section>
+                <a id="top"></a><h2>Top</h2>
+                <h4>소환사의 협곡에서 EU 스타일 포지션 중 상단 라인에서 챔피언을 플레이하는 포지션</h4>
+                <p>게임 전체적인 영향력은 다른 포지션에 비해 낮은 편이지만 이때문에 1:1 싸움의 비중이 매우 크다.</p>
+                <p>다만 미니언으로부터 골드를 지속적으로 독점해서 얻을 수 있어 레벨과 골드를 다른 포지션보다 높일 수 있다.</p>
+            </section>
+
+            <section>
+                <a id="jungle"></a><h2>Jungle</h2>
+                <h4>소환사의 협곡에서 EU 스타일 포지션 중 정글이라는 중립 지역을 중점으로 운용하는 포지션</h4>
+                <p>다른 포지션에 비해 플레이가 가장 까다롭다.</p>
+                <p>특정 라인에 주재하지 않고 맵에 있는 몹을 잡으며 성장한다. 이러한 특성 때문에 이동 동선이 가장 넓고, 모든 라인에 쉽게 개입할 수 있다.</p>
+                <p>라인 싸움에 관여하는 것 뿐만 아니라 드래곤, 협곡의 전령, 내셔 남작 등 중요 오브젝트를 챙기는 데 중요한 역할을 담당한다. </p>
+                <p>게임의 초중반부 영향력은 강하지만, 후반부의 영향력은 약한 편이다.</p>
+            </section>
+
+            <section>
+                <a id="mid"></a><h2>Mid</h2>
+                <h4>소환사의 협곡에서 EU 스타일 포지션 중 중단 라인에서 챔피언을 플레이하는 포지션</h4>
+                <p>맵의 중심에 위치한만큼 게임 전반에서 타 라인에 지속적으로 많은 영향력을 펼칠 수 있다. </p>
+                <p>탑과 동일하게 미니언을 독점하기 때문에 높은 레벨과 골드로 중후반부에 다른 라인을 압박할 수 있다.</p>
+            </section>
+
+            <section>
+                <a id="support"></a><h2>Support</h2>
+                <h4>소환사의 협곡에서 팀을 전체적으로 보조하고, 특히 하단 라이너를 보조하는 지원가 포지션</h4>
+                <p>서포터라는 이름에서 알 수 있듯 좁게는 다른 챔피언에게 힐이나 버프를 주는 것이나 넓게는 바텀 라이너가 미니언을 쉽게 먹을 수 있도록 체력을 적당히 깎아주고 적을 견제하는 등의 도움을 준다.</p>
+                <p>다만 이처럼 다른 포지션에게 양보하는 입장이다 보니 골드 수급이 많이 부족하다.</p>
+                <p>초중반까지는 라인전에 강한 영향력을 펼치지만, 후반부의 영향력이 가장 약한 포지션이다.</p>
+            </section>
+
+            <section>
+                <a id="bottom"></a><h2>Bottom</h2>
+                <h4>소환사의 협곡에서 EU 스타일 포지션 중 하단 라인에서 서포터와 듀오로 챔피언을 플레이하는 포지션</h4>
+                <p>흔히 원거리에서 평타 위주로 적을 공격하는 챔피언을 사용한다.</p>
+                <p>초반에 비해 중후반부의 영향력이 강한 편이다.</p>
+                <p></p>
+            </section>
+            <br><br>
+            
+            
+            <section>
+                <h2>나에게 어울리는 포지션 찾기</h2>
+                <p>1 ~ 5 사이의 숫자를 입력하세요.</p>
+                <form>
+                    <ul>
+                        <ol>
+                            <li>게임 전체의 흐름 파악을 잘 한다. <input id="jun1" type="text" size="2"/></li>
+                            <li>적과 진검승부 보는 것을 좋아한다. <input id="top1" type="text" size="2"/></li>
+                            <li>안정적인 게임 플레이를 선호하며 초반보다 후반에 활약하는 것을 좋아한다. <input id="bot1" type="text" size="2"/></li>
+                            <li>게임의 주축이 되어 승리에 기여하고 싶다. <input id="mid1" type="text" size="2"/></li>
+                            <li>한 곳에 계속 있기보단 여기저기 돌아다니는 것을 선호한다. <input id="jun2" type="text" size="2"/></li>
+                            <li>게임의 시야를 넓혀주는 역할을 잘 한다. <input id="sup1" type="text" size="2"/></li>
+                            <li>어디서 싸움이 일어나던 빠르게 합류가 가능하다. <input id="mid2" type="text" size="2"/></li>
+                            <li>다른 사람에게 방해받지 않고 집중하는 것을 좋아한다. <input id="top2" type="text" size="2"/></li>
+                            <li>다른 사람과 함께 싸워 이득을 보는 것을 좋아한다. <input id="bot2" type="text" size="2"/></li>
+                            <li>다른 플레이어를 보조하는 것을 좋아한다. <input id="sup2" type="text" size="2"/></li>
+                        </ol>
+                        <input class="margin" type="button" size="2" value="결과 보기" onclick="callResult();"/> <input type="reset" value="다시 하기" size="2"/>
+                        <li>추천 포지션 : <input id="re" type="text" size="10"></li>
+                    </ul> 
+                </form>
+                
+            </section>
+        </article>
+
+        <footer>
+            <a href="https://www.leagueoflegends.com/ko-kr/how-to-play/?_gl=1*1ire5ng*_ga*MTk3Njg3NTI1NS4xNjU1MzYyMjUz*_ga_FXBJE5DEDD*MTY1NTM2MjI1Mi4xLjEuMTY1NTM2MjM1MC4yOQ..&_ga=2.189795625.300629139.1655362253-1976875255.1655362253"><p>출처 : 라이엇 게임즈 공식 홈페이지</p></a>
+        </footer>
+</html>
